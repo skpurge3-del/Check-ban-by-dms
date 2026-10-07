@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Phone Checker</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="logo">✓</div>
+
+    <h1>Phone Checker</h1>
+
+    <p class="subtitle">
+      Vérifie la validité d'un numéro de téléphone
+    </p>
+
+    <form id="checker">
+
+      <input
+        id="phone"
+        type="tel"
+        placeholder="+225 07 00 00 00 00"
+        maxlength="30"
+        autocomplete="tel"
+      >
+
+      <button type="submit">
+        Vérifier
+      </button>
+
+    </form>
+
+    <div id="message"></div>
+
+    <div id="result" class="result hidden">
+
+      <div class="status">
+        <span>✓</span>
+
+        <div>
+          <h2>Numéro valide</h2>
+          <p id="status"></p>
+        </div>
+      </div>
+
+      <div class="info">
+
+        <div>
+          <span>Numéro</span>
+          <strong id="number"></strong>
+        </div>
+
+        <div>
+          <span>Pays</span>
+          <strong id="country"></strong>
+        </div>
+
+        <div>
+          <span>Indicatif</span>
+          <strong id="code"></strong>
+        </div>
+
+      </div>
+
+      <div class="warning">
+
+        <strong>Important</strong>
+
+        <p>
+          Le bannissement d'un compte WhatsApp est une
+          information privée. Un site public ne peut pas
+          confirmer un bannissement avec seulement un numéro.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
